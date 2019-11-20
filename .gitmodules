@@ -1,0 +1,6 @@
+[submodule "luma-ui"]
+	path = luma-ui
+	url = https://github.com/PMET-public/luma-ui.git
+[submodule "luma-pwa"]
+	path = luma-pwa
+	url = https://github.com/fnhipster/luma-pwa.git

@@ -1,0 +1,27 @@
+{
+    "author": "Carlos A. Cabrera @fnhipster",
+    "private": true,
+    "version": "1.0.0-beta.1",
+    "repository": "https://github.com/PMET-public/luma-workspace.git",
+    "bugs": "https://github.com/PMET-public/luma-workspace/issues",
+    "workspaces": [
+        "./luma-ui",
+        "./luma-pwa"
+    ],
+    "scripts": {
+        "build": "yarn build:luma-ui && yarn build:luma-pwa",
+        "build:luma-ui": "yarn workspace @pmet-public/luma-ui build",
+        "build:luma-pwa": "yarn workspace luma-pwa build",
+        "start": "yarn workspace luma-pwa",
+        "predev": "yarn build:luma-ui",
+        "dev": "concurrently -n luma-ui,luma-pwa -c red,orange 'yarn dev:luma-ui' 'yarn dev:luma-pwa'",
+        "dev:luma-ui": "yarn workspace @pmet-public/luma-ui dev",
+        "dev:luma-pwa": "yarn workspace luma-pwa dev"
+    },
+    "devDependencies": {
+        "concurrently": "^5.0.0",
+        "react": "^16.11.0",
+        "react-dom": "^16.11.0",
+        "styled-components": "^4.4.1"
+    }
+}
