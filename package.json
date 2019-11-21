@@ -14,7 +14,7 @@
         "build:luma-pwa": "yarn workspace luma-pwa build",
         "start": "yarn workspace luma-pwa",
         "predev": "yarn build:luma-ui",
-        "dev": "concurrently -n luma-ui,luma-pwa -c red,orange 'yarn dev:luma-ui' 'yarn dev:luma-pwa'",
+        "dev": "concurrently -n luma-ui,luma-pwa -c red,yellow 'yarn dev:luma-ui' 'yarn dev:luma-pwa'",
         "dev:luma-ui": "yarn workspace @pmet-public/luma-ui dev",
         "dev:luma-pwa": "yarn workspace luma-pwa dev"
     },
