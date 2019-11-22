@@ -3,4 +3,4 @@
 	url = https://github.com/PMET-public/luma-ui.git
 [submodule "luma-pwa"]
 	path = luma-pwa
-url=git@github.com:fnhipster/luma-pwa.git
+	url=git@github.com:fnhipster/luma-pwa.git
