@@ -9,6 +9,7 @@
         "./luma-pwa"
     ],
     "scripts": {
+        "reinstall": "rm -rf node_modules yarn.lock luma-pwa/node_modules yarn.lock luma-ui/node_modules luma-ui/yarn.lock && yarn",
         "build": "yarn build:luma-ui && yarn build:luma-pwa",
         "build:luma-ui": "yarn workspace @pmet-public/luma-ui build",
         "build:luma-pwa": "yarn workspace luma-pwa build",
@@ -20,8 +21,8 @@
     },
     "devDependencies": {
         "concurrently": "^5.0.0",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
-        "styled-components": "^5.0.1"
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "styled-components": "5.0.1"
     }
 }
