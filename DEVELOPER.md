@@ -1,14 +1,14 @@
 # Development
 
-This is a workspace to work with both [Luma UI](https://github.com/PMET-public/luma-ui) and [Luma PWA 🔒](https://github.com/fnhipster/luma-pwa) repositories in a local environment (a.k.a. localhost).
+This is a workspace to work with both [StoryStore UI](https://github.com/fnhipster/storystore-ui) and [StoryStore PWA 🔒](https://github.com/fnhipster/storystore-pwa) repositories in a local environment (a.k.a. localhost).
 
 ## Get Started
 
 ### ☝️ Configure your Environment
 
-Start by setting your environment variables in _luma-pwa_. You can do so by copying the the .env file from the sample template `cp ./luma-pwa/.env.sample ./luma-pwa/.env`
+Start by setting your environment variables in _storystore-pwa_. You can do so by copying the the .env file from the sample template `cp ./storystore-pwa/.env.sample ./storystore-pwa/.env`
 
-Then, open the file in you editor of choice `code luma-pwa/.env` and change the your environment accordingly.
+Then, open the file in you editor of choice `code storystore-pwa/.env` and change the your environment accordingly.
 
 ### ✌️ Install Dependencies
 

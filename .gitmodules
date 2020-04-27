@@ -1,6 +1,6 @@
-[submodule "luma-ui"]
-	path = luma-ui
-	url = https://github.com/PMET-public/luma-ui.git
-[submodule "luma-pwa"]
-	path = luma-pwa
-	url = https://github.com/fnhipster/luma-pwa.git
+[submodule "storystore-ui"]
+	path = storystore-ui
+	url = https://github.com/fnhipster/storystore-ui.git
+[submodule "storystore-pwa"]
+	path = storystore-pwa
+	url = https://github.com/fnhipster/storystore-pwa.git

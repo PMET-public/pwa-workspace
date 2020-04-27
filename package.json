@@ -5,21 +5,19 @@
     "repository": "https://github.com/PMET-public/luma-workspace.git",
     "bugs": "https://github.com/PMET-public/luma-workspace/issues",
     "workspaces": [
-        "./luma-ui",
-        "./luma-pwa"
+        "./storystore-ui",
+        "./storystore-pwa"
     ],
     "scripts": {
-        "reinstall": "rm -rf node_modules yarn.lock luma-pwa/node_modules luma-pwa/yarn.lock luma-ui/node_modules luma-ui/yarn.lock && yarn",
+        "cleanup": "rm -rf node_modules yarn.lock storystore-pwa/.next storystore-pwa/node_modules storystore-pwa/yarn.lock storystore-ui/node_modules storystore-ui/yarn.lock && yarn && echo \"🧼 So fresh and so clean clean (clean)\"",
         "build": "yarn build:pwa",
-        "build:pwa": "yarn workspace luma-pwa build",
-        "start": "yarn workspace luma-pwa start",
-        "dev": "concurrently -n luma-ui,luma-pwa -c red,yellow 'yarn dev:ui' 'yarn dev:pwa'",
-        "dev:ui": "yarn workspace @pmet-public/luma-ui dev",
-        "dev:pwa": "yarn workspace luma-pwa dev"
+        "build:pwa": "yarn workspace pwa build",
+        "start": "yarn workspace pwa start",
+        "dev": "concurrently -n ui,pwa -c red,yellow 'yarn dev:ui' 'yarn dev:pwa'",
+        "dev:ui": "yarn workspace @pmet-public/ui dev",
+        "dev:pwa": "yarn workspace pwa dev"
     },
     "devDependencies": {
-        "concurrently": "^5.0.0",
-        "react": "16.13.1",
-        "react-dom": "16.13.1"
+        "concurrently": "^5.0.0"
     }
 }
