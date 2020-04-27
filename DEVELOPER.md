@@ -1,6 +1,6 @@
 # Development
 
-This is a workspace to work with both [StoryStore UI](https://github.com/fnhipster/storystore-ui) and [StoryStore PWA 🔒](https://github.com/fnhipster/storystore-pwa) repositories in a local environment (a.k.a. localhost).
+This is a workspace to work with both [StoryStore UI](https://github.com/pmet-public/storystore-ui) and [StoryStore PWA 🔒](https://github.com/pmet-public/storystore-pwa) repositories in a local environment (a.k.a. localhost).
 
 ## Get Started
 

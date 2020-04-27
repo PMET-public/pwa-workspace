@@ -1,6 +1,6 @@
 [submodule "storystore-ui"]
 	path = storystore-ui
-	url = https://github.com/fnhipster/storystore-ui.git
+	url = https://github.com/PMET-public/storystore-ui.git
 [submodule "storystore-pwa"]
 	path = storystore-pwa
-	url = https://github.com/fnhipster/storystore-pwa.git
+	url = https://github.com/PMET-public/storystore-pwa.git
