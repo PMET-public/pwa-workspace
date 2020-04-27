@@ -5,11 +5,11 @@
     "repository": "https://github.com/PMET-public/luma-workspace.git",
     "bugs": "https://github.com/PMET-public/luma-workspace/issues",
     "workspaces": [
-        "./storystore-ui",
-        "./storystore-pwa"
+        "./ui",
+        "./pwa"
     ],
     "scripts": {
-        "cleanup": "rm -rf node_modules yarn.lock storystore-pwa/.next storystore-pwa/node_modules storystore-pwa/yarn.lock storystore-ui/node_modules storystore-ui/yarn.lock && yarn && echo \"🧼 So fresh and so clean clean (clean)\"",
+        "cleanup": "rm -rf node_modules yarn.lock pwa/.next pwa/node_modules pwa/yarn.lock ui/node_modules ui/yarn.lock && yarn && echo \"🧼 So fresh and so clean clean (clean)\"",
         "build": "yarn build:pwa",
         "build:pwa": "yarn workspace pwa build",
         "start": "yarn workspace pwa start",
