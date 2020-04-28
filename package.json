@@ -1,21 +1,23 @@
 {
     "author": "Carlos A. Cabrera @fnhipster",
     "private": true,
-    "version": "1.0.0-beta.1",
-    "repository": "https://github.com/PMET-public/luma-workspace.git",
-    "bugs": "https://github.com/PMET-public/luma-workspace/issues",
+    "version": "1.0.0",
+    "repository": "https://github.com/pmet-public/pwa-workspace.git",
+    "bugs": "https://github.com/pmet-public/pwa-workspace/issues",
     "workspaces": [
         "./ui",
         "./pwa"
     ],
     "scripts": {
-        "cleanup": "rm -rf node_modules yarn.lock pwa/.next pwa/node_modules pwa/yarn.lock ui/node_modules ui/yarn.lock && yarn && echo \"🧼 So fresh and so clean clean (clean)\"",
-        "build": "yarn build:pwa",
-        "build:pwa": "yarn workspace pwa build",
-        "start": "yarn workspace pwa start",
+        "cleanup": "rm -rf node_modules yarn.lock package-lock.json pwa/node_modules pwa/package-lock.json pwa/yarn.lock ui/node_modules ui/package-lock.json ui/yarn.lock && echo \"🧼 So Freash and So Clean (Clean)\"",
+        "postinstall": "rm -rf pwa/node_modules/@pmet-public/storystore-ui",
+        "build": "yarn build:ui && yarn build:pwa",
+        "build:ui": "(cd ui && yarn build)",
+        "build:pwa": "(cd pwa && yarn build)",
+        "start": "(cd pwa && npm start)",
         "dev": "concurrently -n ui,pwa -c red,yellow 'yarn dev:ui' 'yarn dev:pwa'",
-        "dev:ui": "yarn workspace @pmet-public/ui dev",
-        "dev:pwa": "yarn workspace pwa dev"
+        "dev:ui": "(cd ui && yarn dev)",
+        "dev:pwa": "(cd pwa && yarn dev)"
     },
     "devDependencies": {
         "concurrently": "^5.0.0"
