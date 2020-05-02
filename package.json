@@ -10,14 +10,13 @@
     ],
     "scripts": {
         "cleanup": "rm -rf node_modules yarn.lock package-lock.json pwa/node_modules pwa/package-lock.json pwa/yarn.lock ui/node_modules ui/package-lock.json ui/yarn.lock && echo \"🧼 So Freash and So Clean (Clean)\"",
-        "postinstall": "rm -rf pwa/node_modules/@pmet-public/storystore-ui",
         "build": "yarn build:ui && yarn build:pwa",
-        "build:ui": "(cd ui && yarn build)",
-        "build:pwa": "(cd pwa && yarn build)",
+        "build:ui": "yarn workspace @storystore/ui build",
+        "build:pwa": "yarn workspace @storystore/pwa build",
         "start": "(cd pwa && npm start)",
         "dev": "concurrently -n ui,pwa -c red,yellow 'yarn dev:ui' 'yarn dev:pwa'",
-        "dev:ui": "(cd ui && yarn dev)",
-        "dev:pwa": "(cd pwa && yarn dev)"
+        "dev:ui": "yarn workspace @storystore/ui dev",
+        "dev:pwa": "yarn workspace @storystore/pwa dev"
     },
     "devDependencies": {
         "concurrently": "^5.0.0"
