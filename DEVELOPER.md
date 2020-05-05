@@ -4,6 +4,9 @@ This is a workspace to work with both [StoryStore UI](https://github.com/pmet-pu
 
 ## Get Started
 
+### 👯‍♀️ Clone Repo
+`git clone https://github.com/PMET-public/pwa-workspace.git --recursive`
+
 ### ☝️ Configure your Environment
 
 Start by setting your environment variables in _storystore-pwa_. You can do so by copying the the .env file from the sample template `cp ./storystore-pwa/.env.sample ./storystore-pwa/.env`
