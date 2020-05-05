@@ -19,4 +19,4 @@ From the root folder of your project, run `yarn install`
 
 ### 🤙 Run Development
 
-From the root folder of your project, run `yarn dev`. This is going to run both Luma UI and Luma PWA on watch mode.
+From the root folder of your project, run `yarn dev`. This is going to run both StoryStore UI and StoryStore PWA on watch mode.
