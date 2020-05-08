@@ -4,4 +4,4 @@
 
 ## [Development](DEVELOPER.md)
 
-http://pwa.storystore.dev/
+http://pwa.storystore.dev/settings
