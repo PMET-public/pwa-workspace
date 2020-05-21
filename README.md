@@ -1,7 +1,14 @@
 # PWA Demo Experience
 
-## [Report an Issue](ISSUES.md)
+💄 StoryStore UI (https://github.com/PMET-public/storystore-ui)
 
-## [Development](DEVELOPER.md)
+🛍 StoryStore PWA (https://github.com/PMET-public/storystore-pwa)
 
-http://pwa.storystore.dev/settings
+## Gettings Started
+
+☝️ `yarn install`
+
+👩‍💻 Create your .env file `cp ./pwa/.env.sample ./pwa/.env` and Edit `./pwa/.env` 
+
+🎧 `yarn dev`
+
